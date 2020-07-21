@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+  body
+  {
+      background-image:url('557716.jpg');
+  }
+  </style>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "bcc65b21-61bf-48b7-ae63-2099d33318a4", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "fc7fd8f6-d65d-49d7-a191-144a20a64c25", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</head>
+<body>
+
+<title>Control Panel</title>
+<div class="relative" style="color:black; font-size:45px">Use The Panel to Control Your Robot.</div>
+
+<form action="CP.php" method="POST">
+<button class="button button1" name="button1"  style="vertical-align:middle"><span>Right</span></button>
+<button class="button button2" name="button2"  style="vertical-align:middle"><span>Left</span></button>
+<button class="button button3" name ="button3" style="vertical-align:middle"><span>Forward</span></button>
+<button class="button button4" name ="button4" style="vertical-align:middle"><span>Backward</span></button>
+<button class="button button5" name ="button5" style="vertical-align:middle"><span>Stop</span></button>
+</form>
+
+</body>
+</html>
